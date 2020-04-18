@@ -127,8 +127,8 @@ def main():
     MAX_INPUT = 50
 
     image_paths = glob.glob(IMAGE_DIR + '/*.png')[:MAX_INPUT]
-    model_xml = os.path.join(MODEL_DIR, 'resnet50.xml')
-    model_bin = os.path.join(MODEL_DIR, 'resnet50.bin')
+    model_xml = os.path.join(MODEL_DIR, 'resnet50_FP16.xml')
+    model_bin = os.path.join(MODEL_DIR, 'resnet50_FP16.bin')
 
     # device = "CPU"
     device = "MYRIAD"  # choose this one for intel neural compute stick 2
